@@ -1,0 +1,12 @@
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aplicacoes/MonolitoBackend/MonolitoBackend.Core/bin/Debug/net8.0/MonolitoBackend.Core.deps.json
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aplicacoes/MonolitoBackend/MonolitoBackend.Core/bin/Debug/net8.0/MonolitoBackend.Core.dll
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aplicacoes/MonolitoBackend/MonolitoBackend.Core/bin/Debug/net8.0/MonolitoBackend.Core.pdb
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aplicacoes/MonolitoBackend/MonolitoBackend.Core/obj/Debug/net8.0/MonolitoBackend.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aplicacoes/MonolitoBackend/MonolitoBackend.Core/obj/Debug/net8.0/MonolitoBackend.Core.AssemblyInfoInputs.cache
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aplicacoes/MonolitoBackend/MonolitoBackend.Core/obj/Debug/net8.0/MonolitoBackend.Core.AssemblyInfo.cs
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aplicacoes/MonolitoBackend/MonolitoBackend.Core/obj/Debug/net8.0/MonolitoBackend.Core.csproj.CoreCompileInputs.cache
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aplicacoes/MonolitoBackend/MonolitoBackend.Core/obj/Debug/net8.0/MonolitoBackend.Core.sourcelink.json
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aplicacoes/MonolitoBackend/MonolitoBackend.Core/obj/Debug/net8.0/MonolitoBackend.Core.dll
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aplicacoes/MonolitoBackend/MonolitoBackend.Core/obj/Debug/net8.0/refint/MonolitoBackend.Core.dll
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aplicacoes/MonolitoBackend/MonolitoBackend.Core/obj/Debug/net8.0/MonolitoBackend.Core.pdb
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aplicacoes/MonolitoBackend/MonolitoBackend.Core/obj/Debug/net8.0/ref/MonolitoBackend.Core.dll

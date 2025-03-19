@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Executar API Monolito",
+        "type": "coreclr",
+        "request": "launch",
+        "preLaunchTask": "build",
+        // "preLaunchTask": "watch",
+        "program": "${workspaceFolder}/MonolitoBackend.API/bin/Debug/net9.0/MonolitoBackend.API.dll",
+        // "program": "dotnet",
+        // "args": [],
+        "args": ["watch", "run", "--project", "MonolitoBackend.API"],
+        "cwd": "${workspaceFolder}/MonolitoBackend.API",
+        "stopAtEntry": false,
+// "serverReadyAction": {
+//   "action": "debugWithChrome",
+//   "pattern": "\\bNow listening on:\\s+(https?://\\S+|http?://\\S+)",
+//   "uriFormat": "%s/swagger/index.html"
+// }
+
+        "serverReadyAction": {
+          "action": "openExternally",
+          "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+          "uriFormat": "%s/swagger/index.html"
+        },      
+        "env": {
+          "ASPNETCORE_ENVIRONMENT": "Development"
+        },
+        "sourceFileMap": {
+          "/Users//Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aplicacoes/MonolitoBackend": "${workspaceFolder}"
+        }
+      }
+    ]
+  }

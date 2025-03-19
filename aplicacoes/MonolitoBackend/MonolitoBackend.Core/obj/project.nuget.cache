@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "37yY0koN0UU=",
+  "success": true,
+  "projectFilePath": "/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aplicacoes/MonolitoBackend/MonolitoBackend.Core/MonolitoBackend.Core.csproj",
+  "expectedPackageFiles": [
+    "/Users/evertoncoimbradearaujo/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
+    "/Users/evertoncoimbradearaujo/.nuget/packages/microsoft.extensions.configuration.abstractions/9.0.3/microsoft.extensions.configuration.abstractions.9.0.3.nupkg.sha512",
+    "/Users/evertoncoimbradearaujo/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "/Users/evertoncoimbradearaujo/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "/Users/evertoncoimbradearaujo/.nuget/packages/microsoft.extensions.primitives/9.0.3/microsoft.extensions.primitives.9.0.3.nupkg.sha512",
+    "/Users/evertoncoimbradearaujo/.nuget/packages/microsoft.identitymodel.abstractions/8.6.1/microsoft.identitymodel.abstractions.8.6.1.nupkg.sha512",
+    "/Users/evertoncoimbradearaujo/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.6.1/microsoft.identitymodel.jsonwebtokens.8.6.1.nupkg.sha512",
+    "/Users/evertoncoimbradearaujo/.nuget/packages/microsoft.identitymodel.logging/8.6.1/microsoft.identitymodel.logging.8.6.1.nupkg.sha512",
+    "/Users/evertoncoimbradearaujo/.nuget/packages/microsoft.identitymodel.tokens/8.6.1/microsoft.identitymodel.tokens.8.6.1.nupkg.sha512",
+    "/Users/evertoncoimbradearaujo/.nuget/packages/system.identitymodel.tokens.jwt/8.6.1/system.identitymodel.tokens.jwt.8.6.1.nupkg.sha512"
+  ],
+  "logs": []
+}

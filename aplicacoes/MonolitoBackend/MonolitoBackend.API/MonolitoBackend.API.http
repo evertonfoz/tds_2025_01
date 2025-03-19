@@ -1,0 +1,6 @@
+# @MonolitoBackend.API_HostAddress = https://localhost:7040/api
+
+# GET {{MonolitoBackend.API_HostAddress}}/categories/
+# Accept: application/json
+
+# ###

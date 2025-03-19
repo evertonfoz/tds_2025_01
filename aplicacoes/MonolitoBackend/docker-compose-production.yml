@@ -1,0 +1,30 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres-monolito
+    restart: always
+    environment:
+      POSTGRES_DB: MonolitoDB
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      
+  monolito-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: monolito-api
+    restart: always
+    depends_on:
+      - postgres
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ConnectionStrings__DefaultConnection: "Host=postgres;Port=5432;Database=MonolitoDB;Username=postgres;Password=postgres"
+    ports:
+      - "8080:5000"
+
+volumes:
+  postgres_data:
