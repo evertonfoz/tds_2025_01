@@ -1,14 +1,17 @@
 ```markdown
 # 📌 tds_2025_01
 
-Repositório utilizado para a disciplina **Tecnologia em Desenvolvimento de Sistemas**, abordando conceitos e práticas sobre **arquitetura monolítica e micro-serviços**, utilizando **.NET e Docker**.
+Repositório utilizado para a disciplina **Tecnologia em Desenvolvimento de Sistemas**,
+abordando conceitos e práticas sobre **arquitetura monolítica e micro-serviços**,
+utilizando **.NET e Docker**.
 
 ---
 
 ## 📂 Estrutura do Repositório
 
 - **aplicacoes/MonolitoBackend/** → Implementação inicial de um backend monolítico.  
-- **aulas/preparação/OrderManagementAPI/** → Código e materiais para a API de gerenciamento de pedidos.  
+- **aulas/preparação/OrderManagementAPI/** → Código e materiais para a API de gerenciamento
+de pedidos.  
 - **slides/** → Apresentações utilizadas nas aulas.  
 - **checklist-para-avaliar-seminários.xlsx** → Documento para avaliação de seminários.  
 
@@ -27,7 +30,8 @@ Repositório utilizado para a disciplina **Tecnologia em Desenvolvimento de Sist
 
 ## 📌 Objetivos do Projeto
 
-1️⃣ **Explorar Arquiteturas de Software** → Iniciar com sistemas monolíticos e evoluir para micro-serviços.  
+1️⃣ **Explorar Arquiteturas de Software** → Iniciar com sistemas monolíticos e evoluir para
+micro-serviços.  
 2️⃣ **Implementação Prática** → Criar APIs utilizando boas práticas de desenvolvimento.  
 3️⃣ **Gerenciamento e Deploy** → Utilização de Docker para empacotamento e execução.  
 
