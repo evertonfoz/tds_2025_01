@@ -1,0 +1,19 @@
+@OrderManagementAPI_HostAddress = http://localhost:5067
+
+GET {{OrderManagementAPI_HostAddress}}/orders
+Accept: application/json
+
+# POST {{OrderManagementAPI_HostAddress}}/orders
+# Content-Type: application/json 
+# Accept: application/json
+
+# {
+#   "Customer": "Joseph",
+#   "Amount": 100.0
+# }
+
+DELETE {{OrderManagementAPI_HostAddress}}/orders/1
+Content-Type: application/json 
+Accept: application/json
+
+###
