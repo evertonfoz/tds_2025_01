@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonolitoBackend.Api", "MonolitoBackend.Api\MonolitoBackend.Api.csproj", "{CAA3C1A3-0FBF-4C0A-A5CF-AAE1BD81A474}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonolitoBackend.Core", "MonolitoBackend.Core\MonolitoBackend.Core.csproj", "{81DD7657-F037-4D5A-8B07-602E556CB4C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonolitoBackend.Infrastructure", "MonolitoBackend.Infrastructure\MonolitoBackend.Infrastructure.csproj", "{2126FB2B-6E82-4AC9-A455-70C45003A3B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAA3C1A3-0FBF-4C0A-A5CF-AAE1BD81A474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA3C1A3-0FBF-4C0A-A5CF-AAE1BD81A474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA3C1A3-0FBF-4C0A-A5CF-AAE1BD81A474}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CAA3C1A3-0FBF-4C0A-A5CF-AAE1BD81A474}.Debug|x64.Build.0 = Debug|Any CPU
+		{CAA3C1A3-0FBF-4C0A-A5CF-AAE1BD81A474}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CAA3C1A3-0FBF-4C0A-A5CF-AAE1BD81A474}.Debug|x86.Build.0 = Debug|Any CPU
+		{CAA3C1A3-0FBF-4C0A-A5CF-AAE1BD81A474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA3C1A3-0FBF-4C0A-A5CF-AAE1BD81A474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAA3C1A3-0FBF-4C0A-A5CF-AAE1BD81A474}.Release|x64.ActiveCfg = Release|Any CPU
+		{CAA3C1A3-0FBF-4C0A-A5CF-AAE1BD81A474}.Release|x64.Build.0 = Release|Any CPU
+		{CAA3C1A3-0FBF-4C0A-A5CF-AAE1BD81A474}.Release|x86.ActiveCfg = Release|Any CPU
+		{CAA3C1A3-0FBF-4C0A-A5CF-AAE1BD81A474}.Release|x86.Build.0 = Release|Any CPU
+		{81DD7657-F037-4D5A-8B07-602E556CB4C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DD7657-F037-4D5A-8B07-602E556CB4C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DD7657-F037-4D5A-8B07-602E556CB4C7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{81DD7657-F037-4D5A-8B07-602E556CB4C7}.Debug|x64.Build.0 = Debug|Any CPU
+		{81DD7657-F037-4D5A-8B07-602E556CB4C7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{81DD7657-F037-4D5A-8B07-602E556CB4C7}.Debug|x86.Build.0 = Debug|Any CPU
+		{81DD7657-F037-4D5A-8B07-602E556CB4C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DD7657-F037-4D5A-8B07-602E556CB4C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DD7657-F037-4D5A-8B07-602E556CB4C7}.Release|x64.ActiveCfg = Release|Any CPU
+		{81DD7657-F037-4D5A-8B07-602E556CB4C7}.Release|x64.Build.0 = Release|Any CPU
+		{81DD7657-F037-4D5A-8B07-602E556CB4C7}.Release|x86.ActiveCfg = Release|Any CPU
+		{81DD7657-F037-4D5A-8B07-602E556CB4C7}.Release|x86.Build.0 = Release|Any CPU
+		{2126FB2B-6E82-4AC9-A455-70C45003A3B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2126FB2B-6E82-4AC9-A455-70C45003A3B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2126FB2B-6E82-4AC9-A455-70C45003A3B2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2126FB2B-6E82-4AC9-A455-70C45003A3B2}.Debug|x64.Build.0 = Debug|Any CPU
+		{2126FB2B-6E82-4AC9-A455-70C45003A3B2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2126FB2B-6E82-4AC9-A455-70C45003A3B2}.Debug|x86.Build.0 = Debug|Any CPU
+		{2126FB2B-6E82-4AC9-A455-70C45003A3B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2126FB2B-6E82-4AC9-A455-70C45003A3B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2126FB2B-6E82-4AC9-A455-70C45003A3B2}.Release|x64.ActiveCfg = Release|Any CPU
+		{2126FB2B-6E82-4AC9-A455-70C45003A3B2}.Release|x64.Build.0 = Release|Any CPU
+		{2126FB2B-6E82-4AC9-A455-70C45003A3B2}.Release|x86.ActiveCfg = Release|Any CPU
+		{2126FB2B-6E82-4AC9-A455-70C45003A3B2}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

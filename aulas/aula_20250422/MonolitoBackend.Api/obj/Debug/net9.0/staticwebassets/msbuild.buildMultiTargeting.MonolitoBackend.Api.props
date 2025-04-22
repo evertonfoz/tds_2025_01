@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/MonolitoBackend.Api.props" />
+</Project>

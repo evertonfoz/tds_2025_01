@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "lKxmTq2Jr2brg1W7/kTXRNW4GMtg4IRb9dB2c2C81UA=",
+  "Source": "MonolitoBackend.Api",
+  "BasePath": "_content/MonolitoBackend.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
