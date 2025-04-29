@@ -148,3 +148,12 @@
 /Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Api/obj/Debug/net9.0/MonolitoBackend.Api.pdb
 /Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Api/obj/Debug/net9.0/MonolitoBackend.Api.genruntimeconfig.cache
 /Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Api/obj/Debug/net9.0/ref/MonolitoBackend.Api.dll
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Api/bin/Debug/net9.0/BCrypt.Net-Next.dll
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Api/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Api/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Api/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll

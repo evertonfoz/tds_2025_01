@@ -49,6 +49,29 @@ namespace MonolitoBackend.Infrastructure.Migrations
 
                     b.ToTable("Categories");
                 });
+
+            modelBuilder.Entity("MonolitoBackend.Core.Entities.User", b =>
+                {
+                    b.Property<Guid>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("Users");
+                });
 #pragma warning restore 612, 618
         }
     }

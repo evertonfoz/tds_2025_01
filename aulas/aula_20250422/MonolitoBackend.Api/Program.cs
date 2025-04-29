@@ -1,5 +1,8 @@
 using System.ComponentModel;
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using MonolitoBackend.Core.Repositories;
 using MonolitoBackend.Core.Services;
 using MonolitoBackend.Infrastructure.Data;
@@ -15,8 +18,32 @@ builder.Services.AddDbContext<AppDbContext>(
     );
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 builder.Services.AddControllers();
+
+var jwtSecret = builder.Configuration["Jwt:Secret"];
+if (string.IsNullOrEmpty(jwtSecret)) {
+    throw new Exception("JWT Secret is not configured");
+}
+
+var key = Encoding.UTF8.GetBytes(jwtSecret);
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+{
+   options.RequireHttpsMetadata = false;
+   options.SaveToken = true;
+   options.TokenValidationParameters = new TokenValidationParameters{
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(key),
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+        ValidAudience = builder.Configuration["Jwt:Audience"]
+   }; 
+});
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 if (app.Environment.IsDevelopment())

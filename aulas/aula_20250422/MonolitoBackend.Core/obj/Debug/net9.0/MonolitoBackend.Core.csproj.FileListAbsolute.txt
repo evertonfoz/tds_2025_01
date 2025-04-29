@@ -10,3 +10,4 @@
 /Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Core/obj/Debug/net9.0/refint/MonolitoBackend.Core.dll
 /Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Core/obj/Debug/net9.0/MonolitoBackend.Core.pdb
 /Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Core/obj/Debug/net9.0/ref/MonolitoBackend.Core.dll
+/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Core/obj/Debug/net9.0/MonolitoBackend.Core.csproj.AssemblyReference.cache

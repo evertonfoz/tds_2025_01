@@ -7,14 +7,9 @@ namespace MonolitoBackend.Api.Controllers;
 
 [ApiController]
 [Route("api/categories")]
-public class CategoryController : ControllerBase
+public class CategoryController(ICategoryService categoryService) : ControllerBase
 {
-    private readonly ICategoryService _categoryService;
-
-    public CategoryController(ICategoryService categoryService)
-    {
-        _categoryService = categoryService;
-    }
+    private readonly ICategoryService _categoryService = categoryService;
 
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Category>>> GetAll() {

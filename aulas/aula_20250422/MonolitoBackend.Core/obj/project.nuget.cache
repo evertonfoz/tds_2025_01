@@ -1,8 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "NHcRpNsRBv4=",
+  "dgSpecHash": "2l8U/ozrRX0=",
   "success": true,
   "projectFilePath": "/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Core/MonolitoBackend.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/evertoncoimbradearaujo/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
+    "/Users/evertoncoimbradearaujo/.nuget/packages/microsoft.extensions.configuration.abstractions/9.0.4/microsoft.extensions.configuration.abstractions.9.0.4.nupkg.sha512",
+    "/Users/evertoncoimbradearaujo/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "/Users/evertoncoimbradearaujo/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "/Users/evertoncoimbradearaujo/.nuget/packages/microsoft.extensions.primitives/9.0.4/microsoft.extensions.primitives.9.0.4.nupkg.sha512",
+    "/Users/evertoncoimbradearaujo/.nuget/packages/microsoft.identitymodel.abstractions/8.9.0/microsoft.identitymodel.abstractions.8.9.0.nupkg.sha512",
+    "/Users/evertoncoimbradearaujo/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.9.0/microsoft.identitymodel.jsonwebtokens.8.9.0.nupkg.sha512",
+    "/Users/evertoncoimbradearaujo/.nuget/packages/microsoft.identitymodel.logging/8.9.0/microsoft.identitymodel.logging.8.9.0.nupkg.sha512",
+    "/Users/evertoncoimbradearaujo/.nuget/packages/microsoft.identitymodel.tokens/8.9.0/microsoft.identitymodel.tokens.8.9.0.nupkg.sha512",
+    "/Users/evertoncoimbradearaujo/.nuget/packages/system.identitymodel.tokens.jwt/8.9.0/system.identitymodel.tokens.jwt.8.9.0.nupkg.sha512"
+  ],
   "logs": []
 }

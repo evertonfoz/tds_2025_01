@@ -7,4 +7,5 @@ namespace MonolitoBackend.Infrastructure.Data;
 public class AppDbContext(DbContextOptions options) : DbContext(options)
 {
     public DbSet<Category> Categories { get; set; }
+    public DbSet<User> Users { get; set; }
 }
