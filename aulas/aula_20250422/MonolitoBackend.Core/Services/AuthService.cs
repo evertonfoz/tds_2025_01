@@ -14,7 +14,6 @@ public class AuthService(IUserRepository userRepository, IConfiguration configur
     public async Task<string?> AuthenticateAsync(string userName, string password)
     {
         var user = await userRepository.GetByName(userName);
-        // Console.WriteLine($"DEBUG-->{password} {user.Password} {BCrypt.Net.BCrypt.HashPassword(password)}");
         if (BCrypt.Net.BCrypt.Verify(password,user.Password)) {
             
             return GenerateJwtToken(user);
