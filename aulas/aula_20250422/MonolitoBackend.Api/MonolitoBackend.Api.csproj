@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="../MonolitoBackend.Core/MonolitoBackend.Core.csproj" />
     <ProjectReference Include="../MonolitoBackend.Infrastructure/MonolitoBackend.Infrastructure.csproj" />
   </ItemGroup>
 

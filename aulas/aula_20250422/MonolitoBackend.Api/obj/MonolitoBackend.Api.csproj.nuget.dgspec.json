@@ -27,6 +27,9 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
+              "/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Core/MonolitoBackend.Core.csproj": {
+                "projectPath": "/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Core/MonolitoBackend.Core.csproj"
+              },
               "/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Infrastructure/MonolitoBackend.Infrastructure.csproj": {
                 "projectPath": "/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Infrastructure/MonolitoBackend.Infrastructure.csproj"
               }

@@ -4068,6 +4068,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 9.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.4",
       "Microsoft.Extensions.Configuration.Abstractions >= 9.0.4",
+      "MonolitoBackend.Core >= 1.0.0",
       "MonolitoBackend.Infrastructure >= 1.0.0",
       "System.IdentityModel.Tokens.Jwt >= 8.9.0"
     ]
@@ -4098,6 +4099,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Core/MonolitoBackend.Core.csproj": {
+              "projectPath": "/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Core/MonolitoBackend.Core.csproj"
+            },
             "/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Infrastructure/MonolitoBackend.Infrastructure.csproj": {
               "projectPath": "/Users/evertoncoimbradearaujo/Documents/GitHub/tds_2025_01/aulas/aula_20250422/MonolitoBackend.Infrastructure/MonolitoBackend.Infrastructure.csproj"
             }

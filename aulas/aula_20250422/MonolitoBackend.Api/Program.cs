@@ -7,20 +7,21 @@ using MonolitoBackend.Core.Repositories;
 using MonolitoBackend.Core.Services;
 using MonolitoBackend.Infrastructure.Data;
 using MonolitoBackend.Infrastructure.Repositories;
+using MonolitoDemo.Api.Extensions;
+using MonolitoDemo.Api.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddOpenApi();
 
 var connectionString = builder.Configuration.GetConnectionString("PostgreSql");
+
+builder.Services.AddApplicationServices();
+
+
 builder.Services.AddDbContext<AppDbContext>(
      options => options.UseNpgsql(connectionString)
     );
-builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-builder.Services.AddScoped<ICategoryService, CategoryService>();
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<IAuthService, AuthService>();
 
 builder.Services.AddControllers();
 
@@ -46,6 +47,14 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
+
+app.UseMiddleware<ExceptionMiddleWare>();
+
+if (app.Environment.IsDevelopment())
+{
+    app.MapOpenApi();
+}
+
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
