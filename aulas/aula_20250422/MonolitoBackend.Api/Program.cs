@@ -19,9 +19,20 @@ var connectionString = builder.Configuration.GetConnectionString("PostgreSql");
 builder.Services.AddApplicationServices();
 
 
-builder.Services.AddDbContext<AppDbContext>(
-     options => options.UseNpgsql(connectionString)
-    );
+// builder.Services.AddDbContext<AppDbContext>(
+//      options => options.UseNpgsql(connectionString)
+//     );
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(connectionString, npgsqlOptions =>
+        npgsqlOptions.EnableRetryOnFailure(
+            maxRetryCount: 5,
+            maxRetryDelay: TimeSpan.FromSeconds(10),
+            errorCodesToAdd: null
+        )
+    )
+);
+
 
 builder.Services.AddControllers();
 
@@ -61,5 +72,7 @@ if (app.Environment.IsDevelopment())
 }
 // app.UseHttpsRedirection();
 
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapControllers();
 app.Run();

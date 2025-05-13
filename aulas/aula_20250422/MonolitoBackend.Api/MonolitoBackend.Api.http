@@ -1,4 +1,5 @@
-@MonolitoBackend_Api_HostAddress = http://localhost:5288
+# @MonolitoBackend_Api_HostAddress = http://localhost:5288
+@MonolitoBackend_Api_HostAddress = http://localhost:5001
 
 GET {{MonolitoBackend_Api_HostAddress}}/api/categories
 Accept: application/json
