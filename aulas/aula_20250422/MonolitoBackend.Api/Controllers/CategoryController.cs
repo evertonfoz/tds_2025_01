@@ -1,4 +1,5 @@
 using System;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MonolitoBackend.Core.Entities;
 using MonolitoBackend.Core.Services;
@@ -12,6 +13,7 @@ public class CategoryController(ICategoryService categoryService) : ControllerBa
     private readonly ICategoryService _categoryService = categoryService;
 
     [HttpGet]
+    [Authorize]
     public async Task<ActionResult<IEnumerable<Category>>> GetAll() {
         var categories = await _categoryService.GetAllAsync();
         return Ok(categories);

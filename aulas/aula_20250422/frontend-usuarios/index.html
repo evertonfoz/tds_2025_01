@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+    }
+
+    input, button {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      width: 250px;
+    }
+
+    #btnLogout {
+      margin-top: 30px;
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    #btnLogout:hover {
+      background-color: #c0392b;
+    }
+
+    #btnCategorias {
+      margin-top: 10px;
+      background-color: #2ecc71;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    #btnCategorias:hover {
+      background-color: #27ae60;
+    }
+  </style>
+</head>
+<body>
+  <h2>Login</h2>
+  <input type="email" id="email" placeholder="Email" />
+  <input type="password" id="senha" placeholder="Senha" />
+  <button onclick="fazerLogin()">Entrar</button>
+
+  <button id="btnLogout" onclick="fazerLogout()">Sair</button>
+  <button id="btnCategorias" onclick="abrirCategorias()">Ir para Categorias</button>
+
+  <p id="mensagem"></p>
+
+  <script>
+    let novaAba;
+
+    async function fazerLogin() {
+      const email = document.getElementById("email").value;
+      const senha = document.getElementById("senha").value;
+
+      const resposta = await fetch("http://localhost:5001/api/auth", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: email, password: senha })
+      });
+
+      const mensagem = document.getElementById("mensagem");
+
+      if (resposta.ok) {
+        const token = await resposta.text();
+        localStorage.setItem("token", token);
+        mensagem.innerText = "Login realizado com sucesso!";
+        console.log("Token salvo:", token);
+
+        // Abrir nova aba com usuários (opcional)
+        window.open("usuarios.html", "_blank");
+      } else {
+        mensagem.innerText = "Usuário ou senha inválidos.";
+        mensagem.style.color = "red";
+      }
+    }
+
+    function fazerLogout() {
+      localStorage.removeItem("token");
+      document.getElementById("mensagem").innerText = "Você saiu com sucesso.";
+      console.log("Token removido");
+    }
+
+    function abrirCategorias() {
+      const token = localStorage.getItem("token");
+      if (!token) {
+        alert("Faça login primeiro para acessar as categorias.");
+        return;
+      }
+
+      novaAba = window.open("http://localhost:5003", "_blank");
+
+      // Envia o token para a nova aba usando postMessage
+      const enviarToken = () => {
+        if (novaAba) {
+          novaAba.postMessage({ token }, "http://localhost:5003");
+        }
+      };
+
+      setTimeout(enviarToken, 1000); // espera 1 segundo para garantir que carregou
+    }
+  </script>
+</body>
+</html>
