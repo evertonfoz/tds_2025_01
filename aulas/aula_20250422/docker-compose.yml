@@ -26,3 +26,13 @@ services:
     volumes:
       - ./postgres/postgres-data:/var/lib/postgresql/data
       - ./postgres/backup:/backup
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: monolito-frontend
+    ports:
+      - "5002:80"
+    depends_on:
+      - api

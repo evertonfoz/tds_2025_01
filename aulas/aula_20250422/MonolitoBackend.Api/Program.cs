@@ -12,6 +12,16 @@ using MonolitoDemo.Api.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend",
+        policy => policy.WithOrigins("http://localhost:5002")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod());
+});
+
+
+
 builder.Services.AddOpenApi();
 
 var connectionString = builder.Configuration.GetConnectionString("PostgreSql");
@@ -58,6 +68,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
+
+app.UseCors("AllowFrontend");
+
 
 app.UseMiddleware<ExceptionMiddleWare>();
 

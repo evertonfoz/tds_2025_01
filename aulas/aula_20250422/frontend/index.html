@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+    }
+
+    input, button {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      width: 250px;
+    }
+
+    #btnLogout {
+      margin-top: 30px;
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    #btnLogout:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <h2>Login</h2>
+  <input type="email" id="email" placeholder="Email" />
+  <input type="password" id="senha" placeholder="Senha" />
+  <button onclick="fazerLogin()">Entrar</button>
+
+  <button id="btnLogout" onclick="fazerLogout()">Sair</button>
+
+  <p id="mensagem"></p>
+
+  <script>
+    async function fazerLogin() {
+      const email = document.getElementById("email").value;
+      const senha = document.getElementById("senha").value;
+
+      const resposta = await fetch("http://localhost:5001/api/auth", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: email, password: senha })
+      });
+
+      const mensagem = document.getElementById("mensagem");
+
+      if (resposta.ok) {
+        const token = await resposta.text();
+        localStorage.setItem("token", token);
+        mensagem.innerText = "Login realizado com sucesso!";
+        console.log("Token salvo:", token);
+
+        // Abrir nova aba com a página protegida
+        window.open("usuarios.html", "_blank");
+      } else {
+        mensagem.innerText = "Usuário ou senha inválidos.";
+        mensagem.style.color = "red";
+      }
+    }
+
+    function fazerLogout() {
+      localStorage.removeItem("token");
+      document.getElementById("mensagem").innerText = "Você saiu com sucesso.";
+      console.log("Token removido");
+    }
+  </script>
+</body>
+</html>
