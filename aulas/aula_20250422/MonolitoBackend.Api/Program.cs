@@ -1,24 +1,29 @@
-using System.ComponentModel;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using MonolitoBackend.Core.Repositories;
-using MonolitoBackend.Core.Services;
 using MonolitoBackend.Infrastructure.Data;
-using MonolitoBackend.Infrastructure.Repositories;
 using MonolitoDemo.Api.Extensions;
 using MonolitoDemo.Api.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowFrontend",
-        policy => policy.WithOrigins("http://localhost:5002","http://localhost:5003")
-                        .AllowAnyHeader()
-                        .AllowAnyMethod());
-});
+options.AddPolicy("AllowFrontend",
+    policy => policy
+    .SetIsOriginAllowed(_ => true)
+    .AllowAnyHeader()
+    .AllowAnyMethod()
+    .AllowCredentials()));
+
+// builder.Services.AddCors(options =>
+// {
+//     options.AddPolicy("AllowFrontend",
+//         policy => policy.WithOrigins("http://localhost:5002",
+//                     "http://localhost:5003", "http://localhost:53089/")
+//                         .AllowAnyHeader()
+//                         .AllowAnyMethod());
+// });
 
 
 
